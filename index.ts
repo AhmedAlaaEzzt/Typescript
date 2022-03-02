@@ -1,5 +1,3 @@
-const logNumber = (i: number) => {
-  console.log(i);
-};
-
-logNumber(5);
+const json = '{"x":10, "y":20}';
+const coordinates = JSON.parse(json);
+console.log(coordinates);
