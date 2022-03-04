@@ -1,12 +1,11 @@
-const todayWeather = {
-    date: new Date(),
-    weather: "sunny",
-  };
-  
-  const logWeather = (forecast: {date:Date, weather: string} ): void => {
-    console.log(forecast.date);
-    console.log(forecast.weather);
-  };
-  
-  
-  logWeather(todayWeather)
+const profile = {
+  name: "alex",
+  age: 20,
+  coords: {
+    lat: 0,
+    lng: 15,
+  },
+  setAge(age: number): void {
+    this.age = age;
+  },
+};
