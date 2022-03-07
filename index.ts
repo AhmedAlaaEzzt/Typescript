@@ -3,3 +3,5 @@ const drink = {
     carbonated: true,
     sugar: 40
 }
+
+const pepsi = ['brown', true, 40];
