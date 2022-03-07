@@ -1,10 +1,17 @@
-const drink = {
-    color: 'brown',
-    carbonated: true,
-    sugar: 40
-}
+const oldCivic = {
+  name: "civic",
+  year: 2000,
+  broken: true,
+};
 
-const pepsi: [string, boolean, number] = ['brown', true, 40];
-const sprite: [string, boolean, number] = ['clear', true, 42];
-const tea: [string, boolean, number] = ['brown', false, 0];
+const printVehicle = (vehicle: {
+  name: string;
+  year: number;
+  broken: boolean;
+}): void => {
+  console.log(`Name: ${vehicle.name}`);
+  console.log(`Year: ${vehicle.year}`);
+  console.log(`Broken? ${vehicle.broken}`);
+};
 
+printVehicle(oldCivic);
