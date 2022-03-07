@@ -1,1 +1,5 @@
-const importantDates = [new Date(), '2030-10-10'];
+const drink = {
+    color: 'brown',
+    carbonated: true,
+    sugar: 40
+}
