@@ -1,42 +1,25 @@
-interface Vehicle {
-  name: string;
-  year: number;
-  broken: boolean;
-  summary(): string;
+class Vehicle {
+  drive(): void {
+    console.log("chugga chugga!");
+  }
+
+  honk(): void{
+    console.log('beep');
+  }
 }
 
-interface Drink {
-  color: string;
-  carbonated: boolean;
-  sugar: number;
-  summary(): string;
+class Car extends Vehicle{
+  drive(): void{
+    console.log('Vroom');
+  }
 }
 
-const oldCivic = {
-  name: "civic",
-  year: 2000,
-  broken: true,
-  summary(): string {
-    return `Name: ${this.name}`;
-  },
-};
+const vehicle = new Vehicle();
+console.log("### Vehicle ###");
+vehicle.drive();
+vehicle.honk();
 
-const pepsi = {
-  color: "brown",
-  carbonated: true,
-  sugar: 40,
-  summary(): string {
-    return `My drink has ${this.sugar} grams of suger`;
-  },
-};
-
-const printVehicle = (vehicle: Vehicle): void => {
-  console.log(vehicle.summary());
-};
-
-const printDrink = (drink: Drink): void => {
-  console.log(drink.summary());
-};
-
-printVehicle(oldCivic);
-printDrink(pepsi);
+console.log("### car ###");
+const car = new Car();
+car.drive();
+car.honk();
