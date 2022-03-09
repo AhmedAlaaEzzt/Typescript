@@ -1,5 +1,5 @@
 class Vehicle {
-  color: string;
+  color: string = "";
 
   drive(): void {
     console.log("chugga chugga!");
