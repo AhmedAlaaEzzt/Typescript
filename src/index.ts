@@ -1,6 +1,10 @@
-import faker from "faker"
-
-
+import {User} from './User';
+import {Company} from './Company';
 console.log("hello there!");
 
-console.log(faker);
+const user1 = new User();
+const company1 = new Company();
+
+
+console.log(user1);
+console.log(company1);
