@@ -16,3 +16,4 @@ console.log(company1);
 
 const customMap = new CustomMap('map');
 customMap.addUserMarker(user1);
+customMap.addCompanyMarker(company1);
