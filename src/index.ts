@@ -14,4 +14,5 @@ console.log(user1);
 console.log(company1);
 
 
-new CustomMap('map');
+const customMap = new CustomMap('map');
+customMap.addUserMarker(user1);
