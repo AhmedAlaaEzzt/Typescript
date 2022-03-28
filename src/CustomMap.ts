@@ -13,7 +13,7 @@ export class CustomMap {
     );
   }
 
-  addUserMarker(user: User): void {
+  addMarker(user: User | Company): void {
     new google.maps.Marker({
       map: this.googleMap,
       position: {
@@ -24,14 +24,6 @@ export class CustomMap {
   }
 
   
-  addCompanyMarker(company: Company): void {
-    new google.maps.Marker({
-      map: this.googleMap,
-      position: {
-        lat: company.location.lat,
-        lng: company.location.lng,
-      },
-    });
-  }
+
 
 }
